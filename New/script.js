@@ -1,71 +1,68 @@
 //hamburger button 
-document.addEventListener("DOMContentLoaded", function () {
-    const hamburgerIcon = document.getElementById("hamburger-icon");
-    const body = document.body;
-
-    hamburgerIcon.addEventListener("click", function () {
-        body.classList.toggle("menu-open");
+$(() => {
+    $('.hamburger').on('click', () => {
+      $('.hamburger').toggleClass('active');
+      $('.left').toggleClass('active');
+      $('.main').toggleClass('show-left'); // Add this line
     });
-});
-
-
-
+  });
+  
 //adding card and song in recommended place
 var songs = [
     {
         imagename: "song8.jpg",
         songname: "Dil Nu",
         artistname: "Ap Dhillon",
-        id : "1",
+        id: "1",
         playersong: "song8.mp3",
     },
     {
         imagename: "song1.jpg",
         songname: "Badtameez Dil",
         artistname: "Benny Dayal",
-        id : "2",
+        id: "2",
         playersong: "song1.mp3",
     },
     {
         imagename: "song2.jpg",
         songname: "Ranjhana",
         artistname: "Akhil Sachdeva",
-        id : "3",
+        id: "3",
         playersong: "song2.mp3",
     },
     {
         imagename: "song3.jpg",
         songname: "At My Worst",
         artistname: "Pink Sweat",
-        id : "4",
+        id: "4",
         playersong: "song3.mp3",
     },
     {
         imagename: "song4.jpg",
         songname: "Choo lo",
         artistname: "The Local Train",
-        id : "5",
+        id: "5",
         playersong: "song4.mp3",
     },
     {
         imagename: "song5.jpg",
         songname: "Janiye",
         artistname: "Vishal Mishra",
-        id : "6",
+        id: "6",
         playersong: "song5.mp3",
     },
     {
         imagename: "song6.jpg",
         songname: "Samjho Na",
         artistname: "Aditya Rikhari",
-        id : "7",
+        id: "7",
         playersong: "song6.mp3",
     },
     {
         imagename: "song7.jpg",
         songname: "Gumshuda",
         artistname: "Akshath",
-        id : "8",
+        id: "8",
         playersong: "song7.mp3",
     },
 ];
