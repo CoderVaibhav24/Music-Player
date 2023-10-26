@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="sideimage">
+                <div class="icon-image">
+                    <img src="player-inverted.gif" alt="logo">
+                </div>
+                <div class="name-logo">
+                    <span class="name"><strong>Music</strong><span class="name additional-name">verse</span></span>
+                </div>
+            </div>
+            <div class="side-function">
+                <ul class="nav-function">
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-home-heart'><span class="text nav-text">
+                                    Home
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-microphone'><span class="text nav-text">
+                                    Artist
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bxs-album'><span class="text nav-text">
+                                    Album
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-microphone'>
+                                <span class="text nav-text">
+                                    Podcast
+                                </span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-book-open'><span class="text nav-text">
+                                    Audio Book
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-time-five'><span class="text nav-text">
+                                    Recent
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-heart'><span class="text nav-text">
+                                    Favourit
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-music'><span class="text nav-text">
+                                    Playlist
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-cog'><span class="text nav-text">
+                                    Setting
+                                </span></i>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-user'><span class="text nav-text">
+                                    Account
+                                </span></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <i class='bx bx-log-out'><span class="text nav-text">
+                                    Logout
+                                </span></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="first-space">
+                <div class="first-head">
+                    <h2>Recommended</h2>
+                </div>
+                <div id="card">
+                </div>
+            </div>
+            <div class="music">
+                <audio id="audioPlayer" controls>
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

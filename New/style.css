@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 0.165fr 1fr;
+    max-width: inherit;
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.left {
+    max-height: 100vh;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+.left::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.main .left .side-function .nav-function .nav-item {
+    display: grid;
+    place-items: left;
+    margin-left: 3vw;
+}
+
+.main .left .side-function .nav-function .nav-item a {
+    text-decoration: none;
+    color: #adadad;
+    line-height: 3vw;
+    font-size: 1vw;
+    font-weight: bolder;
+    padding: 0.5vw;
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right {
+    background-color: #ebebeb;
+    height: 100vh;
+}
+
+.main .left .sideimage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding-right: 13px;
+}
+
+.main .left .sideimage .name-logo span {
+    font-size: 1.75vw;
+    color: rgba(70, 187, 199, 0.42);
+}
+
+.main .left .sideimage .name-logo .additional-name span {
+    font-size: 1.75vw;
+}
+
+.main .left .sideimage .icon-image img {
+    width: 100%;
+    height: auto;
+}
+
+.main .right{
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+.right ::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.main .right .first-space {
+    margin: 1vw;
+    padding: 1.25vw;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.main .right .first-space #card {
+    display: flex;
+    column-gap: 0.8vw;
+    overflow-x: scroll;
+    transition: all 0.5s ease-in-out;
+    margin-top: 1vw;
+}
+
+
+.main .right .first-space #card .card1 img:hover {
+    transform: scale(1.03);
+    opacity: 80%;
+}
+
+.main .right .first-space #card .card1 {
+    text-align: center;
+}
+
+.main .right .first-space #card ::-webkit-scrollbar {
+    width: 0;
+    display: none;
+}
+
+.main .right .first-space #card .card1 .image img {
+    width: 10vw;
+    border-radius: 1vw;
+}
+
+.main .right .first-space #card .card1 .disc {
+    font-size: 0.9vw;
+    color: #adadad;
+}
+
+.main .right .first-space .first-head h2 {
+    font-size: 2vw;
+}
+
+/* Position the audio element at the bottom of the right div */
+.main .right .music {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the audio controls */
+.main .right .music #audioPlayer {
+    width: 99vw;
+    margin: 0 auto;
+}
+
+/* Style the audio text when audio is not supported */
+.main .right .music #audioPlayer::before {
+    content: "Your browser does not support the audio element.";
+    display: block;
+    font-size: 16px;
+    color: #adadad;
+}
